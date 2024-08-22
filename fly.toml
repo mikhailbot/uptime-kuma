@@ -5,6 +5,9 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
+[build]
+  image = "louislam/uptime-kuma:1.23.13-debian"
+
 [mounts]
 source="uptime_kuma__data_machines"
 destination="/app/data"
